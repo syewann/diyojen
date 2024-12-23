@@ -1,0 +1,50 @@
+<!-- Popup file: popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2c2c2c;
+      color: #ffffff;
+      text-align: center;
+    }
+    .timer {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pomodoro Timer</h1>
+  <div class="timer" id="timer">25:00</div>
+  <div class="controls">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
